@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagonal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Diagonal Calculator</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <h2>Kubus</h2>
+            <label for="side">Sisi (cm):</label>
+            <input type="number" id="side" placeholder="Masukkan panjang sisi">
+            <button onclick="calculateCube()">Hitung</button>
+            <p id="cubeResults"></p>
+        </section>
+
+        <section class="form-container">
+            <h2>Balok</h2>
+            <label for="length">Panjang (cm):</label>
+            <input type="number" id="length" placeholder="Masukkan panjang">
+            <label for="width">Lebar (cm):</label>
+            <input type="number" id="width" placeholder="Masukkan lebar">
+            <label for="height">Tinggi (cm):</label>
+            <input type="number" id="height" placeholder="Masukkan tinggi">
+            <button onclick="calculateRectangular()">Hitung</button>
+            <p id="rectangularResults"></p>
+        </section>
+    </main>
+    <footer>
+      <h2>About</h2>
+        <p>Dibuat oleh :</p>
+        <ul>
+          <li>Hawa</li>
+          <li>Miftah</li>
+          <li>Tiara</li>
+          <li>Sadono</li>
+        </ul>
+        <p>Halaman ini dibuat untuk memudahkan menghitung diagonal ruang dan diagonal bidang.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
