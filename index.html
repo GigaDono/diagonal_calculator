@@ -1,41 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagonal Calculator</title>
+    <title>Pantai Tanjung Benoa - Wisata Seru di Bali</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Diagonal Calculator</h1>
-    </header>
-    <main>
-        <section class="form-container">
-            <h2>Kubus</h2>
-            <label for="side">Sisi (cm):</label>
-            <input type="number" id="side" placeholder="Masukkan panjang sisi">
-            <button onclick="calculateCube()">Hitung</button>
-            <p id="cubeResults"></p>
-        </section>
 
-        <section class="form-container">
-            <h2>Balok</h2>
-            <label for="length">Panjang (cm):</label>
-            <input type="number" id="length" placeholder="Masukkan panjang">
-            <label for="width">Lebar (cm):</label>
-            <input type="number" id="width" placeholder="Masukkan lebar">
-            <label for="height">Tinggi (cm):</label>
-            <input type="number" id="height" placeholder="Masukkan tinggi">
-            <button onclick="calculateRectangular()">Hitung</button>
-            <p id="rectangularResults"></p>
-        </section>
-    </main>
-    <footer>
-      <h2>About</h2>
-        <p>Dibuat oleh : <bold>Muhamad Setia Maulana Sadono</bold></p>
-        <p>Halaman ini dibuat untuk memudahkan menghitung diagonal ruang dan diagonal bidang.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tanjung Benoa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Aktivitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center text-white">
+            <h1>Selamat Datang di Pantai Tanjung Benoa</h1>
+            <p>Destinasi wisata air terbaik di Bali!</p>
+            <a href="#activities" class="btn btn-primary">Lihat Aktivitas</a>
+        </div>
+    </header>
+
+    <!-- Tentang -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>Tentang Pantai Tanjung Benoa</h2>
+            <p>Pantai Tanjung Benoa terkenal dengan pasir putihnya dan beragam olahraga air yang seru.</p>
+        </div>
+    </section>
+
+    <!-- Aktivitas -->
+    <section id="activities" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Aktivitas Seru</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/jet_ski.jpg" class="img-fluid" alt="Jet Ski">
+                    <h4>Jet Ski</h4>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/banana_boat.jpg" class="img-fluid" alt="Banana Boat">
+                    <h4>Banana Boat</h4>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/snorkeling.jpg" class="img-fluid" alt="Snorkeling">
+                    <h4>Snorkeling</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="gallery" class="py-5">
+        <div class="container text-center">
+            <h2>Galeri</h2>
+            <div class="row">
+                <div class="col-md-3"><img src="images/pantai1.jpg" class="img-fluid" alt="Pantai"></div>
+                <div class="col-md-3"><img src="images/pantai2.jpg" class="img-fluid" alt="Pantai"></div>
+                <div class="col-md-3"><img src="images/pantai3.jpg" class="img-fluid" alt="Pantai"></div>
+                <div class="col-md-3"><img src="images/pantai4.jpg" class="img-fluid" alt="Pantai"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Hubungi Kami</h2>
+            <p>Reservasi atau informasi lebih lanjut:</p>
+            <a href="https://wa.me/6281234567890" class="btn btn-success">Chat via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Pantai Tanjung Benoa | Semua Hak Dilindungi</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
